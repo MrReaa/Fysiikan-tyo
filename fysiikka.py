@@ -6,9 +6,12 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import folium
 
+ac_file = "https://raw.githubusercontent.com/MrReaa/Fysiikan-tyo/refs/heads/main/Linear%20Acceleration.csv"
+location_file = "https://raw.githubusercontent.com/MrReaa/Fysiikan-tyo/refs/heads/main/Location.csv"
 
-df = pd.read_csv("https://raw.githubusercontent.com/MrReaa/Fysiikan-tyo/refs/heads/main/Linear%20Acceleration.csv")
-dm = pd.read_csv("https://raw.githubusercontent.com/MrReaa/Fysiikan-tyo/refs/heads/main/Location.csv")
+df = pd.read_csv(ac_file)
+dm = pd.read_csv(location_file)
+
 #Suodatettu data
 
 def butter_lowpass_filter(data, cutoff, fs, nyq, order):
