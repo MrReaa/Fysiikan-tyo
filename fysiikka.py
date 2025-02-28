@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import folium
 
 
-df = pd.read_csv("Linear Acceleration.csv")
-dm = pd.read_csv('Location.csv')
+df = pd.read_csv("https://raw.githubusercontent.com/MrReaa/Fysiikan-tyo/refs/heads/main/Linear%20Acceleration.csv")
+dm = pd.read_csv('https://raw.githubusercontent.com/MrReaa/Fysiikan-tyo/refs/heads/main/Location.csv')
 #Suodatettu data
 
 def butter_lowpass_filter(data, cutoff, fs, nyq, order):
